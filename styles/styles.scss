@@ -3,6 +3,11 @@
   margin: 0;
   max-width: 100%;
 }
+%button {
+  padding: 10px;
+  font-size: 12px;
+  flex: 1;
+}
 
 
 header nav{
@@ -30,19 +35,20 @@ header nav{
 
 .main-content{
   font-family: 'Gentium Book Basic', serif;
-h2{
-  font-weight: lighter;
-  font-size: 70px;
-  background: linear-gradient(to top right,black,pink);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  letter-spacing: 5px;
-
-}
-p{
-  font-size: 20px;
-  color: grey;
-}
+  // height: 100vh;
+  h2{
+    font-weight: lighter;
+    font-size: 70px;
+    background: linear-gradient(to top right,black,pink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: 5px;
+  }
+  p,h4{
+    font-size: 20px;
+    color: grey;
+    padding: 5px;
+  }
 
   display: flex;
   justify-content: space-between;
@@ -54,7 +60,7 @@ p{
   }
 
   .animation{
-    height: 90vh;
+    height: 92vh;
     width: 60%;
     z-index: -1;
     background: url(../media/toys.png) no-repeat center center;
@@ -62,20 +68,23 @@ p{
   }
   .cta{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 10px;
-    font-weight: 600;
+    
 
     .talk{
+      @extend %button;
       background-color: bisque;
       border: none;
-      padding: 10px;
+      margin-right: 10px;
     }
     .portfolio{
-      padding: 10px;
-      border: 2px solid salmon;
+      @extend %button;
+      border: 2px solid bisque;
       color:black;
-      background-color: transparent
+      background-color: transparent;
+      
     }
   }
 }
+
