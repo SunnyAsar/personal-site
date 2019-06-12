@@ -1,0 +1,101 @@
+* {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 90%;
+  padding: 10px;
+  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header nav .nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  list-style-type: none;
+}
+
+header nav .nav-links .nav-link {
+  padding: 10px;
+  margin-left: 10px;
+  border: 1px solid black;
+}
+
+.main-content {
+  font-family: 'Gentium Book Basic', serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main-content h2 {
+  font-weight: lighter;
+  font-size: 70px;
+  background: -webkit-gradient(linear, left bottom, right top, from(black), to(pink));
+  background: linear-gradient(to top right, black, pink);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 5px;
+}
+
+.main-content p {
+  font-size: 20px;
+  color: grey;
+}
+
+.main-content .page-intro {
+  margin: auto;
+  text-align: center;
+}
+
+.main-content .animation {
+  height: 90vh;
+  width: 60%;
+  z-index: -1;
+  background: url(../media/toys.png) no-repeat center center;
+  background-size: contain;
+}
+
+.main-content .cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px;
+  font-weight: 600;
+}
+
+.main-content .cta .talk {
+  background-color: bisque;
+  border: none;
+  padding: 10px;
+}
+
+.main-content .cta .portfolio {
+  padding: 10px;
+  border: 2px solid salmon;
+  color: black;
+  background-color: transparent;
+}
+/*# sourceMappingURL=styles.css.map */

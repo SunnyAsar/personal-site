@@ -1,0 +1,81 @@
+*{
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+
+header nav{
+  display: flex;
+  width: 90%;
+  padding: 10px;
+  margin: auto;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav-links{
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    .nav-link{
+      padding: 10px;
+      margin-left: 10px;
+      border: 1px solid black;
+      &:hover{
+       
+      }
+    }
+  }
+}
+
+.main-content{
+  font-family: 'Gentium Book Basic', serif;
+h2{
+  font-weight: lighter;
+  font-size: 70px;
+  background: linear-gradient(to top right,black,pink);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: 5px;
+
+}
+p{
+  font-size: 20px;
+  color: grey;
+}
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .page-intro{
+    margin: auto;
+    text-align: center;
+    // background-color: aquamarine;
+  }
+
+  .animation{
+    height: 90vh;
+    width: 60%;
+    z-index: -1;
+    background: url(../media/toys.png) no-repeat center center;
+    background-size: contain;
+  }
+  .cta{
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    font-weight: 600;
+
+    .talk{
+      background-color: bisque;
+      border: none;
+      padding: 10px;
+    }
+    .portfolio{
+      padding: 10px;
+      border: 2px solid salmon;
+      color:black;
+      background-color: transparent
+    }
+  }
+}
