@@ -35,12 +35,18 @@ header nav .nav-links {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   list-style-type: none;
+  color: #00B4A3;
 }
 
 header nav .nav-links .nav-link {
-  padding: 10px;
+  padding: 10px 40px;
   margin-left: 10px;
-  border: 1px solid black;
+  border: 2px solid #00B4A3;
+}
+
+header nav .nav-links .nav-link:hover {
+  background: #00B4A3;
+  color: whitesmoke;
 }
 
 .main-content {
@@ -59,8 +65,8 @@ header nav .nav-links .nav-link {
 .main-content h2 {
   font-weight: lighter;
   font-size: 70px;
-  background: -webkit-gradient(linear, left bottom, right top, from(black), to(pink));
-  background: linear-gradient(to top right, black, pink);
+  background: -webkit-gradient(linear, left bottom, right top, from(#2E294E), to(#00B4A3));
+  background: linear-gradient(to top right, #2E294E, #00B4A3);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   letter-spacing: 5px;
@@ -79,9 +85,9 @@ header nav .nav-links .nav-link {
 
 .main-content .animation {
   height: 92vh;
-  width: 60%;
-  z-index: -1;
-  background: url(../media/toys.png) no-repeat center center;
+  width: 50%;
+  z-index: 1;
+  background: url(../media/clip.png) no-repeat center center;
   background-size: contain;
 }
 
@@ -96,14 +102,19 @@ header nav .nav-links .nav-link {
 }
 
 .main-content .cta .talk {
-  background-color: bisque;
+  background-color: #00B4A3;
+  color: whitesmoke;
   border: none;
   margin-right: 10px;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .main-content .cta .portfolio {
-  border: 2px solid bisque;
-  color: black;
+  border: 2px solid #00B4A3;
+  color: #00B4A3;
+  font-size: 14px;
+  font-weight: 700;
   background-color: transparent;
 }
 /*# sourceMappingURL=styles.css.map */
